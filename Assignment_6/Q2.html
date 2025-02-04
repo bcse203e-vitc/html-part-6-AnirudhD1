@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Largest of 3 numbers</title>
+    </head>
+    <body>
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <input type="number" id="n3">
+        <h1 ID ="H"></h1>
+        <button onclick="findGreatest()">Find Greatest</button>
+    </body>
+    <SCRIPT>
+        function findGreatest(){
+            let a=parseInt(document.getElementById("n1").value);
+            let b=parseInt(document.getElementById("n2").value);
+            let c=parseInt(document.getElementById("n3").value);
+            if(a>b && a>c){
+                document.getElementById("H").innerHTML=a.toString();
+            }else if(b>a && b>c){
+                document.getElementById("H").innerHTML=b.toString();
+            }else if(c>b && c>a){
+                document.getElementById("H").innerHTML=c.toString();
+            }
+
+        }
+    </SCRIPT>
+</html>

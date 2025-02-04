@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Swap Numbers</title>
+    </head>
+    <body>
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <h1 id = "h">a =  | b = </h1>
+        <button onclick="swap()">Swap the numbers!</button>
+    </body>
+    <script>
+        function swap(){
+            let a= parseInt(document.getElementById("n1").value);
+            let b= parseInt(document.getElementById("n2").value);
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            console.log(a);
+            console.log(b);
+            let text="a = "+a.toString()+"    b = "+b.toString();
+            document.getElementById("h").innerHTML=text;
+        }
+    </script>
+</html>
